@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+		<meta charset="UTF-8"> 
+		<title>  </title> 
+		<link rel="stylesheet" type="text/css" href="cssStyleChange.css">
+	</head>
+<body>
+  <p> <button onclick=jsAnimationCssStyle()> Start animation </button> </p>
+  <div id ="field">
+    <div id ="rect"> </div>
+  </div>
+  <script>
+    function jsAnimationCssStyle() {
+      let animationObject = document.getElementById("rect");   
+      let position = 0;
+      let timing = setInterval(currentAnimationFrame, 5);
+      function currentAnimationFrame() {
+        if (position == 523) {
+          clearInterval(timing);
+        } else {
+          position++; 
+          animationObject.style.top = position + 'px'; 
+          animationObject.style.left = position + 'px'; 
+        }
+      }
+    }
+  </script>
+</body>
+</html>
+

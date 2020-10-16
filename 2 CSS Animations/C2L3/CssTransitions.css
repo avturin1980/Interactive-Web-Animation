@@ -1,0 +1,30 @@
+div {
+  display: block;
+  margin: 0 auto;
+  width: 888px;
+  height: 661px;
+  background:white; 
+
+  transition-property: background;
+  transition-duration: 2s;
+  transition-delay: 1s;
+  transition-timing-function: ease-in;
+}
+
+div:hover {
+  background:black;
+ 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
